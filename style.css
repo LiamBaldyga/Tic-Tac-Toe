@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    background-color: #dfdfdf;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #28282B;
+    color: #c7c7c7;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    height: 50vw;
+    width: 50vw;
+    max-width: 50vh;
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: whitesmoke;
+    outline: 5px solid #28282B;
+}
+
+.tile {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    outline: 2px solid black;
+    align-items: center;
+    font-size: 10vh;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.announce {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#reset {
+    cursor: pointer;
+    color: #f3bbb3;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #c0392b;
+    border: 3px solid #992e23;
+    font-size: 2.5rem;
+}
+
+#reset:hover {
+    transform: scale(1.03);
+    transition-duration: .15s;
+}
+
+#reset:active {
+    background-color: #b83a2d;
+    transition-duration: .05s;
+    transform: scale(.95);
+}
